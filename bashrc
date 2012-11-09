@@ -178,7 +178,7 @@ export VIEWER=view
 export GIT_SSH=`which ssh`
 
 # Don't dump cores larger than this
-ulimit -c 500000000 # 500 MB
+#ulimit -c 500000000 # 500 MB
 
 # Vi key-bindings for shell (default is emacs)
 set -o vi
