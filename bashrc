@@ -109,9 +109,9 @@ if [ -e $git_completion ]; then
 fi
 
 # ===== The standard PS1 =====
-user_color=$Blue
-host_color=$Red
-path_color=$Cyan
+user_color=$IBlue
+host_color=$IPurple
+path_color=$ICyan
 off=$Color_Off
 
 if [ `id -u` -eq 0 ]; then
@@ -142,19 +142,15 @@ if [ -x /usr/bin/dircolors ]; then
     alias egrep='egrep --color=auto'
 fi
 
-# ls aliases
-alias ls="ls${ls_color} -p"
-alias ll="ls${ls_color} -l"
-alias la="ls${ls_color} -a"
 
 # General aliases file
-bash_aliases=~/.bash_aliases
+bash_aliases=~/bashrc/.bash_aliases
 if [ -f $bash_aliases ]; then
     . $bash_aliases
 fi
 
 # Server login aliases file
-server_logins=~/.server-login-aliases.bash
+server_logins=~/bashrc/.server_login_aliases
 if [ -f $server_logins ]; then
     . $server_logins
 fi
