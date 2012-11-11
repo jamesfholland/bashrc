@@ -78,6 +78,7 @@ On_IPurple='\e[10;95m'  # Purple
 On_ICyan='\e[0;106m'    # Cyan
 On_IWhite='\e[0;107m'   # White
 
+
 # ===== Git Command-Line Completion & PS1 Prefix =====
 # Git completion functions
 git_completion="${HOME}/.git-completion.bash"
@@ -182,6 +183,8 @@ export GIT_SSH=`which ssh`
 
 # Vi key-bindings for shell (default is emacs)
 set -o vi
+#Bash completion
+[[ -f /etc/profile.d/bash_completion.sh ]] && source /etc/profile.d/bash_completion.sh
 
 # Additional items (wrap up)
 bash_tail=~/.bash_tail
