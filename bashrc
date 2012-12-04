@@ -111,8 +111,11 @@ fi
 
 # ===== The standard PS1 =====
 user_color=$IBlue
-host_color=$IPurple
+host_color=$Purple
 path_color=$ICyan
+prompt_color=$Green
+at_color=$IRed
+colon_color=$IRed
 off=$Color_Off
 
 if [ `id -u` -eq 0 ]; then
@@ -124,11 +127,11 @@ fi
 
 BASE_PS1="\
 \[$user_color\]\u\
-\[$off\]@\
+\[$at_color\]@\
 \[$host_color\]\h\
-\[$off\]:\
+\[$colon_color\]:\
 \[$path_color\]\w\
-\[$off\]\$ "
+\[$prompt_color\]\$ "
 
 export PS1="${GIT_PS1}${BASE_PS1}"
 
