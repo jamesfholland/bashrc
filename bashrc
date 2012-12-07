@@ -7,7 +7,6 @@ fi
 # ===== BASH Color Escape Sequences =====
 # Reset
 Color_Off='\e[0m'       # Text Reset
-greenie='\e[1m'
 # Regular Colors
 Black='\e[0;30m'        # Black
 Red='\e[0;31m'          # Red
