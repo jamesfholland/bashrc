@@ -103,13 +103,13 @@ if [ -e $git_completion ]; then
 \
 \$(__gitdescribe \"\
 \[$describe_color\]%s\
-\[$off\]\
+\[$off\]\e
 ]\n\n\")\
 "
 fi
 
 # ===== The standard PS1 =====
-user_color=$IBlue
+user_color=$BBlue
 host_color=$Purple
 path_color=$ICyan
 prompt_color=$Green
