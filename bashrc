@@ -7,7 +7,7 @@ fi
 # ===== BASH Color Escape Sequences =====
 # Reset
 Color_Off='\e[0m'       # Text Reset
-
+greenie='\e[1m'
 # Regular Colors
 Black='\e[0;30m'        # Black
 Red='\e[0;31m'          # Red
@@ -91,7 +91,7 @@ if [ -e $git_completion ]; then
     describe_color=$Yellow
     off=$Color_Off
 
-    GIT_PS1="\
+    GIT_PS1="\1
 \$(__gitproject \"[\
 \[$repo_color\]%s\
 \[$off\]:\
@@ -114,8 +114,8 @@ user_color=$IBlue
 host_color=$Purple
 path_color=$ICyan
 prompt_color=$Green
-at_color=$IRed
-colon_color=$IRed
+at_color=$Color_Off
+colon_color=$Color_Off
 off=$Color_Off
 
 if [ `id -u` -eq 0 ]; then
