@@ -112,7 +112,7 @@ fi
 user_color=$BBlue
 host_color=$Purple
 path_color=$ICyan
-prompt_color=$Green
+prompt_color=$Color_Off
 at_color=$Color_Off
 colon_color=$Color_Off
 off=$Color_Off
