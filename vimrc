@@ -1,5 +1,5 @@
 "set background=dark
-"syntax on
+syntax on
 
 set encoding=utf-8
 set number
@@ -34,3 +34,8 @@ set cursorline
 "set wildmenu
 "set wildmode=list:longest
 colorscheme elflord
+
+set runtimepath=~/.vim/,$VIMRUNTIME
+
+filetype indent on
+
