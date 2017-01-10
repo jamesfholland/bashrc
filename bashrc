@@ -169,11 +169,15 @@ shopt -s checkwinsize
 
 home_bin=~/bin
 if [ -x $home_bin ]; then
-    PATH=$PATH:$home_bin
+    PATH=$home_bin:$PATH
 fi
 home_rbin=~/rbin
 if [ -x $home_rbin ]; then
     PATH=$home_rbin:$PATH
+fi
+apps_bin=/APPS/bin
+if [ -x $apps_bin ]; then
+    PATH=$apps_bin:$PATH
 fi
 export PATH
 
@@ -198,3 +202,6 @@ bash_tail=~/.bash_tail
 if [ -f $bash_tail ]; then
     . $bash_tail
 fi
+
+export PATH=$HOME/python/bin:$PATH
+export PATH=$HOME/.local/bin:$PATH
