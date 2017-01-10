@@ -178,6 +178,7 @@ fi
 export PATH
 
 export EDITOR=vim
+alias vi="vim"
 export VISUAL=view
 export GIT_SSH=`which ssh`
 
